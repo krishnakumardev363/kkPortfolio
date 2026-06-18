@@ -158,7 +158,7 @@ const Navbar = () => {
               padding: '13px 24px', borderRadius: '12px',
               fontSize: '14px', textDecoration: 'none',
             }}>
-              🚀 Hire Me
+               Hire Me
             </a>
           </div>
 

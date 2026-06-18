@@ -160,7 +160,7 @@ const Contact = () => {
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', width: '100%', padding: '14px 24px', minHeight: '50px', borderRadius: '12px', fontSize: '14px', opacity: status === 'loading' ? 0.7 : 1, cursor: status === 'loading' ? 'not-allowed' : 'pointer' }}>
                 {status === 'loading'
                   ? <><div style={{ width: '16px', height: '16px', border: '2px solid rgba(1,10,6,0.3)', borderTopColor: '#010a06', borderRadius: '50%', animation: 'spin .7s linear infinite' }} />Sending...</>
-                  : <><Send size={15} />Launch Message 🚀</>}
+                  : <><Send size={15} />Send Message 🚀</>}
               </button>
 
             </form>
@@ -172,7 +172,7 @@ const Contact = () => {
       {/* Footer */}
       <div style={{ maxWidth: '1000px', margin: '60px auto 0', paddingTop: '28px', borderTop: '1px solid rgba(0,255,136,0.1)', textAlign: 'center' }}>
         <p style={{ color: '#475569', fontSize: '13px', fontFamily: 'Inter,sans-serif' }}>
-          Crafted with ❤️ by <span style={{ color: '#00ff88', fontWeight: 500 }}>Krishnakumar A</span> · MERN Stack + Tailwind CSS v4
+          Copyright @2026 ❤️ by <span style={{ color: '#00ff88', fontWeight: 500 }}>Krishnakumar A</span> · MERN Stack + Tailwind CSS v4
         </p>
       </div>
 

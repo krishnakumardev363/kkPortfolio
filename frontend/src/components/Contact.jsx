@@ -122,7 +122,7 @@ const Contact = () => {
 
               {/* Name + Email */}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
-                {[{ name: 'name', label: 'Your Name *', placeholder: 'Krishnakumar A', type: 'text' }, { name: 'email', label: 'Email *', placeholder: 'you@example.com', type: 'email' }].map(f => (
+                {[{ name: 'name', label: 'Your Name ', placeholder: 'Krishnakumar A', type: 'text' }, { name: 'email', label: 'Email', placeholder: 'you@example.com', type: 'email' }].map(f => (
                   <div key={f.name} style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
                     <label style={{ fontSize: '12px', color: '#94a3b8', fontFamily: 'Inter,sans-serif' }}>{f.label}</label>
                     <input type={f.type} name={f.name} value={form[f.name]} onChange={handleChange} placeholder={f.placeholder} required style={inputStyle}
@@ -134,7 +134,7 @@ const Contact = () => {
 
               {/* Subject */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
-                <label style={{ fontSize: '12px', color: '#94a3b8', fontFamily: 'Inter,sans-serif' }}>Subject *</label>
+                <label style={{ fontSize: '12px', color: '#94a3b8', fontFamily: 'Inter,sans-serif' }}>Subject</label>
                 <input type="text" name="subject" value={form.subject} onChange={handleChange} placeholder="Internship Opportunity / Collaboration" required style={inputStyle}
                   onFocus={e => { e.target.style.borderColor = 'rgba(0,255,136,0.7)'; e.target.style.boxShadow = '0 0 0 3px rgba(0,255,136,0.1)'; }}
                   onBlur={e => { e.target.style.borderColor = 'rgba(0,255,136,0.2)'; e.target.style.boxShadow = 'none'; }} />
@@ -142,7 +142,7 @@ const Contact = () => {
 
               {/* Message */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
-                <label style={{ fontSize: '12px', color: '#94a3b8', fontFamily: 'Inter,sans-serif' }}>Message *</label>
+                <label style={{ fontSize: '12px', color: '#94a3b8', fontFamily: 'Inter,sans-serif' }}>Message</label>
                 <textarea name="message" value={form.message} onChange={handleChange} placeholder="Tell me about the opportunity or project..." rows={4} required style={{ ...inputStyle, resize: 'none' }}
                   onFocus={e => { e.target.style.borderColor = 'rgba(0,255,136,0.7)'; e.target.style.boxShadow = '0 0 0 3px rgba(0,255,136,0.1)'; }}
                   onBlur={e => { e.target.style.borderColor = 'rgba(0,255,136,0.2)'; e.target.style.boxShadow = 'none'; }} />
@@ -160,7 +160,7 @@ const Contact = () => {
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', width: '100%', padding: '14px 24px', minHeight: '50px', borderRadius: '12px', fontSize: '14px', opacity: status === 'loading' ? 0.7 : 1, cursor: status === 'loading' ? 'not-allowed' : 'pointer' }}>
                 {status === 'loading'
                   ? <><div style={{ width: '16px', height: '16px', border: '2px solid rgba(1,10,6,0.3)', borderTopColor: '#010a06', borderRadius: '50%', animation: 'spin .7s linear infinite' }} />Sending...</>
-                  : <><Send size={15} />Send Message 🚀</>}
+                  : <><Send size={15} />Send Message</>}
               </button>
 
             </form>
@@ -172,7 +172,7 @@ const Contact = () => {
       {/* Footer */}
       <div style={{ maxWidth: '1000px', margin: '60px auto 0', paddingTop: '28px', borderTop: '1px solid rgba(0,255,136,0.1)', textAlign: 'center' }}>
         <p style={{ color: '#475569', fontSize: '13px', fontFamily: 'Inter,sans-serif' }}>
-          Copyright @2026 ❤️ by <span style={{ color: '#00ff88', fontWeight: 500 }}>Krishnakumar A</span> · MERN Stack + Tailwind CSS v4
+          Copyright @2026 by <span style={{ color: '#00ff88', fontWeight: 500 }}>Krishnakumar A</span> · MERN Stack + Tailwind CSS v4
         </p>
       </div>
 

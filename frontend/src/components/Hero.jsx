@@ -67,7 +67,7 @@ const Hero = () => {
         <h1 style={{ fontFamily: 'Orbitron,sans-serif', fontWeight: 900, fontSize: 'clamp(2.2rem,8vw,5rem)', lineHeight: 1.1, marginBottom: '18px' }}>
           <span style={{ color: '#fff' }}>KRISHNA</span>
           <span style={{ background: `linear-gradient(135deg,${GREEN},${TEAL},${DARK_GREEN})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>KUMAR</span>
-          <span style={{ color: '#fff' }}> A</span>
+          {/* <span style={{ color: '#fff' }}> A</span> */}
         </h1>
 
         {/* ---- Typewriter ---- */}

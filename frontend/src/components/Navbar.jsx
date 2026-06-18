@@ -104,7 +104,8 @@ const Navbar = () => {
           alignItems: 'center', justifyContent: 'center',
           whiteSpace: 'nowrap',
         }}>
-          Hire Me ⚡
+          Hire Me
+          {/* ⚡ */}
         </a>
 
         {/* ============ HAMBURGER BUTTON ============ */}
